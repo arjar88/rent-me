@@ -1,8 +1,9 @@
 <template>
+  <!-- pages that you want to be displayed by the router should be wraped in an ion-page component,it will add animations -->
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Blank</ion-title>
+        <ion-title>Rent ME</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -37,9 +38,8 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/vue";
-import { defineComponent } from "vue";
 
-export default defineComponent({
+export default {
   name: "HomePage",
   components: {
     IonContent,
@@ -48,7 +48,7 @@ export default defineComponent({
     IonTitle,
     IonToolbar,
   },
-});
+};
 </script>
 
 <style scoped>
